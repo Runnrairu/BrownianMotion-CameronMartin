@@ -5,7 +5,7 @@ import time
 rng = np.random.default_rng()
 pi=3.14159265358979323
 
-def basis_CameronMartin(k,x,T):
+def basis_CameronMartin(k,x,T):#今回は三角関数基底を使用
     if False: 
         return x/np.sqrt(T)
     else:
@@ -54,12 +54,12 @@ time_diff_2 = end_2 - start_2
 print(time_diff_2) 
 
 mean=np.mean(brownian_Cameron,axis=0)
-variance1 =(path+1)*np.var(brownian_Cameron, axis=0)/path
+variance1 =path*np.var(brownian_Cameron, axis=0)/(path-1)
 
 print(mean,variance1)
 
 mean=np.mean(brownian_normal,axis=0)
-variance2 =(path+1)*np.var(brownian_normal, axis=0)/path
+variance2 =path*np.var(brownian_normal, axis=0)/(path-1)
 
 print(mean,variance2)
 print(time_diff_1) 
