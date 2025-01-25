@@ -1,13 +1,3 @@
-<script type="text/javascript" async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/3.2.2/es5/tex-mml-chtml.min.js">
-</script>
-<script type="text/x-mathjax-config">
- MathJax.Hub.Config({
- tex2jax: {
- inlineMath: [['$', '$'] ],
- displayMath: [ ['$$','$$'], ["\\[","\\]"] ]
- }
- });
-</script>
 
 # BrownianMotion-CameronMartin
 
@@ -18,7 +8,7 @@
 Ito-Nishioの定理は、ブラウン運動の確率測度の変換を通じて、新しい確率過程を生成する手法を提供する。この定理を利用することで、ブラウン運動の効率的なサンプリングが可能となる。
 
 ### statement
-各^h_i^はCameron-Martin空間の正規直交基底、各$\epsilon_i$は独立な標準ガウスノイズ、このとき
+各$'h_i'$はCameron-Martin空間の正規直交基底、各$\epsilon_i$は独立な標準ガウスノイズ、このとき
 $$
 \sum^n_{i=1} h_i(t)\epsilon_i
 $$
