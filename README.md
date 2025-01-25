@@ -20,7 +20,7 @@ $$
 実装において、以下の基底関数をCameron-Martin空間の正規直交基底として選択した：
 
 $$
-\h_k(t) = \frac{1}{\pi(k+0.5)}\sqrt{\frac{2}{T}} \sin\left(\frac{(k+0.5 )\pi t}{T}\right) \quad (k=1,2,\ldots)
+h_k(t) = \frac{1}{\pi(k+0.5)}\sqrt{\frac{2}{T}} \sin\left(\frac{(k+0.5 )\pi t}{T}\right) \quad (k=1,2,\ldots)
 $$
 
 ここで$`T`$ はシミュレーション区間の長さ（今回は$`[0,10]`$ ）
