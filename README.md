@@ -11,7 +11,7 @@ Ito-Nishioの定理は、ブラウン運動の確率測度の変換を通じて�
 各$`h_i`$ はCameron-Martin空間の正規直交基底、各$`\epsilon_i`$は独立な標準ガウスノイズ。このとき
 
 $$
-\sum^n_{i=1} h_i(t)\epsilon_i
+\sum^n_{i=1} \epsilon_i h_i(t)
 $$
 
 はブラウン運動に弱収束する。（厳密には誘導される測度がWierner測度に収束）
@@ -20,7 +20,7 @@ $$
 実装において、以下の基底関数をCameron-Martin空間の正規直交基底として選択した：
 
 $$
-\phi_k(t) = \frac{1}{\pi(k+0.5)}\sqrt{\frac{2}{T}} \sin\left(\frac{(k+0.5 )\pi t}{T}\right) \quad (k=1,2,\ldots)
+\h_k(t) = \frac{1}{\pi(k+0.5)}\sqrt{\frac{2}{T}} \sin\left(\frac{(k+0.5 )\pi t}{T}\right) \quad (k=1,2,\ldots)
 $$
 
 ここで$`T`$ はシミュレーション区間の長さ（今回は$`[0,10]`$ ）
