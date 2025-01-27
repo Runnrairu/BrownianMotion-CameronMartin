@@ -7,7 +7,7 @@
 通常、ブラウン運動は次のように行われる。$`\epsilon_t`$をガウシアンノイズとして
 
 $$
-B_{t+\delta t}=B_t+\sqrt{\delta t} \epsilon_t
+B_{t+\Delta t}=B_t+\sqrt{\Delta t} \epsilon_t
 $$
 
 これよりも計算時間が短く、それでいて期待値や分散の収束がいい方法はないだろうか。
